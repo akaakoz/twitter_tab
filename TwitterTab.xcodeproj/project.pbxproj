@@ -16,6 +16,7 @@
 		6D51F19C28F4198200CADC63 /* TwitterTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F19B28F4198200CADC63 /* TwitterTabTests.swift */; };
 		6D51F1A628F4198200CADC63 /* TwitterTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F1A528F4198200CADC63 /* TwitterTabUITests.swift */; };
 		6D51F1A828F4198200CADC63 /* TwitterTabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F1A728F4198200CADC63 /* TwitterTabUITestsLaunchTests.swift */; };
+		6D51F1B628F438DC00CADC63 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 6D51F1B528F438DC00CADC63 /* Tabman */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D51F1B628F438DC00CADC63 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = TwitterTab;
+			packageProductDependencies = (
+				6D51F1B528F438DC00CADC63 /* Tabman */,
+			);
 			productName = TwitterTab;
 			productReference = 6D51F18128F4198000CADC63 /* TwitterTab.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 6D51F17828F4198000CADC63;
+			packageReferences = (
+				6D51F1B428F438DC00CADC63 /* XCRemoteSwiftPackageReference "Tabman" */,
+			);
 			productRefGroup = 6D51F18228F4198000CADC63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D51F1B428F438DC00CADC63 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D51F1B528F438DC00CADC63 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D51F1B428F438DC00CADC63 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D51F17928F4198000CADC63 /* Project object */;
 }
