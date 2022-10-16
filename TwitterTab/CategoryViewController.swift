@@ -1,5 +1,5 @@
 //
-//  ForYouViewController.swift
+//  CategoryViewController.swift
 //  TwitterTab
 //
 //  Created by Akiya Ozawa on R 4/10/16.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class ForYouViewController: UIViewController {
+class CategoryViewController: UIViewController {
   
-  var tabTitle: String? {
+  var tab: Tab? {
     didSet {
-      label.text = tabTitle
+      label.text = tab?.title
     }
   }
-  
+
   let label: UILabel = {
     let label = UILabel()
     label.font = .boldSystemFont(ofSize: 13)

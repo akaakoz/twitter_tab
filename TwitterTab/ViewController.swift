@@ -36,59 +36,25 @@ class ViewController: TabmanViewController {
 
   private var tabs = Tab.allCases
   
-  //private var tabVCs = [UIViewController]()
-  private var tabVCs: [UIViewController] {
-    let foryouVC = ForYouViewController()
-    foryouVC.title = "For you"
-    let trendingVC = TrendingViewController()
-    trendingVC.title = "Tranding"
-    let newsVC = NewsTopViewController()
-    newsVC.title = "News"
-    let sportsVC = SportsViewController()
-    sportsVC.title = "Sports"
-    let entertainmentVC = EntertainmentViewController()
-    entertainmentVC.title = "Entertainment"
-    return [foryouVC, trendingVC, newsVC, sportsVC, entertainmentVC]
-  }
-  
-//  private var b: BarType = {
-//    let bar = BarType()
-//    //bar.heightAnchor.constraint(equalToConstant: 40)
-//    bar.layout.contentMode = .intrinsic
-//    bar.backgroundView.style = .flat(color: .white)
-//    bar.indicator.backgroundColor = .black
-//    bar.indicator.weight = .custom(value: 3)
-//    bar.layout.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-//    bar.buttons.customize { button in
-//      button.selectedFont = .boldSystemFont(ofSize: 13)
-//      button.unselectedFont = .systemFont(ofSize: 13)
-//      button.font = .systemFont(ofSize: 13)
-//      button.selectedFont = .boldSystemFont(ofSize: 13)
-//      button.tintColor = .gray
-//      button.selectedTintColor = .black
-//    }
-//    return bar
-//  }()
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    self.dataSource = self
+    // Create tab bar
     let bar = TMBar.ButtonBar()
     bar.layout.contentMode = .intrinsic
     bar.layout.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     bar.backgroundView.style = .flat(color: .black)
     bar.indicator.backgroundColor = .blue
     bar.indicator.weight = .custom(value: 3)
-    //bar.indicator.overscrollBehavior = .compress
     bar.buttons.customize { button in
       button.selectedFont = .boldSystemFont(ofSize: 13)
       button.font = .boldSystemFont(ofSize: 13)
       button.selectedTintColor = .white
       button.tintColor = .white
     }
+    // Register datasource
+    self.dataSource = self
+    // Add bar to the top
     self.addBar(bar, dataSource: self, at: .top)
-    //self.reloadData()
   }
 }
 
@@ -98,10 +64,9 @@ extension ViewController: PageboyViewControllerDataSource {
   }
   
   func viewController(for pageboyViewController: Pageboy.PageboyViewController, at index: Pageboy.PageboyViewController.PageIndex) -> UIViewController? {
-    let viewController = ForYouViewController()
-    viewController.tabTitle = tabs[index].title
+    let viewController = CategoryViewController()
+    viewController.tab = tabs[index]
     return viewController
-    //return tabVCs[index]
   }
   
   func defaultPage(for pageboyViewController: Pageboy.PageboyViewController) -> Pageboy.PageboyViewController.Page? {
@@ -111,7 +76,6 @@ extension ViewController: PageboyViewControllerDataSource {
 
 extension ViewController: TMBarDataSource {
   func barItem(for bar: Tabman.TMBar, at index: Int) -> Tabman.TMBarItemable {
-    print("tabs[index].title", tabs[index].title)
     return TMBarItem(title: tabs[index].title)
   }
 }

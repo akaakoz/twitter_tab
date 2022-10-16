@@ -17,11 +17,7 @@
 		6D51F1A628F4198200CADC63 /* TwitterTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F1A528F4198200CADC63 /* TwitterTabUITests.swift */; };
 		6D51F1A828F4198200CADC63 /* TwitterTabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D51F1A728F4198200CADC63 /* TwitterTabUITestsLaunchTests.swift */; };
 		6D51F1B628F438DC00CADC63 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 6D51F1B528F438DC00CADC63 /* Tabman */; };
-		6D7F5EBA28FB0801009E0553 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F5EB928FB0801009E0553 /* ForYouViewController.swift */; };
-		6D7F5EBC28FB1434009E0553 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F5EBB28FB1434009E0553 /* TrendingViewController.swift */; };
-		6D7F5EBE28FB144D009E0553 /* NewsTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F5EBD28FB144D009E0553 /* NewsTopViewController.swift */; };
-		6D7F5EC028FB1459009E0553 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F5EBF28FB1459009E0553 /* SportsViewController.swift */; };
-		6D7F5EC228FB1463009E0553 /* EntertainmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F5EC128FB1463009E0553 /* EntertainmentViewController.swift */; };
+		6D7F5EC428FBBDE2009E0553 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F5EC328FBBDE2009E0553 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +51,7 @@
 		6D51F1A128F4198200CADC63 /* TwitterTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D51F1A528F4198200CADC63 /* TwitterTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTabUITests.swift; sourceTree = "<group>"; };
 		6D51F1A728F4198200CADC63 /* TwitterTabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTabUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		6D7F5EB928FB0801009E0553 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
-		6D7F5EBB28FB1434009E0553 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
-		6D7F5EBD28FB144D009E0553 /* NewsTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTopViewController.swift; sourceTree = "<group>"; };
-		6D7F5EBF28FB1459009E0553 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
-		6D7F5EC128FB1463009E0553 /* EntertainmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntertainmentViewController.swift; sourceTree = "<group>"; };
+		6D7F5EC328FBBDE2009E0553 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +106,7 @@
 				6D51F18428F4198000CADC63 /* AppDelegate.swift */,
 				6D51F18628F4198000CADC63 /* SceneDelegate.swift */,
 				6D51F18828F4198000CADC63 /* ViewController.swift */,
-				6D7F5EB928FB0801009E0553 /* ForYouViewController.swift */,
-				6D7F5EBB28FB1434009E0553 /* TrendingViewController.swift */,
-				6D7F5EBD28FB144D009E0553 /* NewsTopViewController.swift */,
-				6D7F5EBF28FB1459009E0553 /* SportsViewController.swift */,
-				6D7F5EC128FB1463009E0553 /* EntertainmentViewController.swift */,
+				6D7F5EC328FBBDE2009E0553 /* CategoryViewController.swift */,
 				6D51F18A28F4198000CADC63 /* Main.storyboard */,
 				6D51F18D28F4198200CADC63 /* Assets.xcassets */,
 				6D51F18F28F4198200CADC63 /* LaunchScreen.storyboard */,
@@ -281,14 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D7F5EBA28FB0801009E0553 /* ForYouViewController.swift in Sources */,
+				6D7F5EC428FBBDE2009E0553 /* CategoryViewController.swift in Sources */,
 				6D51F18928F4198000CADC63 /* ViewController.swift in Sources */,
-				6D7F5EBC28FB1434009E0553 /* TrendingViewController.swift in Sources */,
-				6D7F5EC228FB1463009E0553 /* EntertainmentViewController.swift in Sources */,
 				6D51F18528F4198000CADC63 /* AppDelegate.swift in Sources */,
 				6D51F18728F4198000CADC63 /* SceneDelegate.swift in Sources */,
-				6D7F5EC028FB1459009E0553 /* SportsViewController.swift in Sources */,
-				6D7F5EBE28FB144D009E0553 /* NewsTopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
