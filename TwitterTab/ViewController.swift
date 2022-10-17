@@ -42,14 +42,14 @@ class ViewController: TabmanViewController {
     let bar = TMBar.ButtonBar()
     bar.layout.contentMode = .intrinsic
     bar.layout.contentInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-    bar.backgroundView.style = .flat(color: .black)
-    bar.indicator.backgroundColor = .blue
+    bar.backgroundView.style = .flat(color :#colorLiteral(red: 0.0868801102, green: 0.1225979105, blue: 0.1686807573, alpha: 1))
+    bar.indicator.backgroundColor = #colorLiteral(red: 0.09939720482, green: 0.6090072989, blue: 0.9398307204, alpha: 1)
     bar.indicator.weight = .custom(value: 3)
     bar.buttons.customize { button in
-      button.selectedFont = .boldSystemFont(ofSize: 13)
-      button.font = .boldSystemFont(ofSize: 13)
+      button.selectedFont = .boldSystemFont(ofSize: 15)
+      button.font = .boldSystemFont(ofSize: 15)
       button.selectedTintColor = .white
-      button.tintColor = .white
+      button.tintColor = .gray
     }
     // Register datasource
     self.dataSource = self

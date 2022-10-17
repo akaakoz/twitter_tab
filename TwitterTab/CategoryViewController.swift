@@ -18,12 +18,13 @@ class CategoryViewController: UIViewController {
   let label: UILabel = {
     let label = UILabel()
     label.font = .boldSystemFont(ofSize: 13)
-    label.textColor = .black
+    label.textColor = .white
     return label
   }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.backgroundColor = #colorLiteral(red: 0.0868801102, green: 0.1225979105, blue: 0.1686807573, alpha: 1)
     view.addSubview(label)
     label.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
